@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>VALogs</name>
+	<creationDate>2014-02-18</creationDate>
+	<author>Dotsquares Technologies</author>
+	<authorEmail>jitendra.kumar@dotsquares.com</authorEmail>
+	<authorUrl>http://www.dotsquares.com</authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0.0</version>
+	<description>This Component helps you to manage Access Logs of Vouchers.</description>
+
+	<!-- Public front end files -->
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>views</folder>
+		<folder>templates</folder>
+		<folder>timeline</folder>
+
+		<filename>timeline.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<!-- Media files -->
+	<media destination="com_timeline" folder="media">
+		<folder>images</folder>
+       	<folder>js</folder>
+       	<folder>css</folder>
+       	<filename>index.html</filename>
+	</media>
+
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_timeline.ini</language>
+	</languages>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install/sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<!-- Administrator back-end section -->
+	<administration>
+		<!-- Administration menu -->
+		<menu view="dashboard">COM_VALOGS_MENU_NAME</menu>
+		<submenu>
+			<menu view="dashboard">COM_VALOGS_SUBMENU_DASHBOARD</menu>
+		</submenu>
+
+		<!-- Back-end files -->
+		<files folder="admin">
+			<filename>timeline.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>views</folder>
+			<folder>templates</folder>
+			<folder>install</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_timeline.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_timeline.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

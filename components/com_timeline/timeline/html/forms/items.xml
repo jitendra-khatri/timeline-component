@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="items">
+		<field  name="items_id"
+				type="hidden"
+				label="Article ID" 
+				description="ID of Article"
+				size="10"
+				required="true"
+		/>
+		
+		<field  name="title"
+				type="text"
+				label="Article Title" 
+				description="Title of Article"
+				size="10"
+				required="true"
+		/>
+		
+		<field  name="short_title"
+				type="text"
+				label="Header to Display" 
+				description="A Short header to display on Timeline.&lt;br /&gt;Ex. 2010 or 2011. &lt;br /&gt;Project Name, etc. "
+				size="10"
+				required="true"
+		/>
+		
+		<field  name="description"
+				type="editor"
+				label="Description" 
+				description="Description of Article"
+		/>
+
+		<field
+			name="created_date"
+			type="calendar"
+			class="readonly"
+			label="Creation Date"
+			description="Date on which the article was created."
+			readonly="true"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+				
+		<field  name="image1"
+				type="valogs.articleimage"
+				label="Image1" 
+				description="Image for Article"
+		/>
+	
+		<field  name="image2"
+				type="valogs.articleimage"
+				label="Image2" 
+				description="Image for Article"
+		/>
+	
+		<field  name="image3"
+				type="valogs.articleimage"
+				label="Image3" 
+				description="Image for Article"
+		/>
+	
+	</fieldset>
+</form>

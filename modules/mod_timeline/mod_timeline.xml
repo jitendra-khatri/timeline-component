@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_timeline</name>
+	<author>Dotsquares Technologies</author>
+	<creationDate>Oct. 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>jitendra.kumar@dotsquares.com</authorEmail>
+	<authorUrl>www.dotsquares.com</authorUrl>
+	<version>1.0</version>
+	<description>MOD_TIMELINE_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_timeline">mod_timeline.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_timeline.ini</language>
+		<language tag="en-GB">en-GB.mod_timeline.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field  name="item_count"
+					type="text"
+					label="No. of Items"
+					description="Specify No. of items to show in Timeline"
+					default="5"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+
